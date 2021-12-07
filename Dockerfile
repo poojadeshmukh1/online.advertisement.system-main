@@ -1,4 +1,4 @@
 FROM openjdk:8-jdk-alpine
 EXPOSE 8080
-ADD target/newspaper.advertisement.system.jar newspaper.advertisement.system.jar
-ENTRYPOINT ["java","-jar","/newspaper.advertisement.system.jar"]
+ADD target/newspaper.advertisement.system-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
